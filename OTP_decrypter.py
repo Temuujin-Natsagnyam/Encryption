@@ -1,3 +1,4 @@
+# Run this to decrypt encrypted message from OTP_encrypter.py using msg and key
 alphabet = ['i', 'l', 'o', 'v', 'e', 'k', 'a', 'n', 'b', 'r', 'u', 'g', 'm', 'h', 'c', 'p', 'q', 'j', 's', 't', 'f',
             'd', 'z', 'y', 'x', 'w', ' ']
 
@@ -31,7 +32,4 @@ def user_input():
     return(final_msg)
 
 while 25 == 25:
-    print("\n")
-    userinput = int(input("Enter 1 to begin\n"))
-    if userinput == 1:
-        user_input()
+    user_input()
