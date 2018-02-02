@@ -1,21 +1,20 @@
 import datetime
 alphabet = ['i', 'l', 'o', 'v', 'e', 'k', 'a', 'n', 'b', 'r', 'u', 'g', 'm', 'h', 'c', 'p', 'q', 'j', 's', 't', 'f',
             'd', 'z', 'y', 'x', 'w', ' ']
-
-def caesar(letter,key): #simple caesar function to be used in Vermund function
+def caesar(letter,key):
     i = 0
     for l in alphabet:
         if l == letter:break
         i = i+1
     global akey
     akey = i + key
-    if akey > 26:   # the key here will be random so it may be very high
+    if akey > 26:
         while akey > 26:
             akey = akey - 27
     cypher = alphabet[akey]
     return cypher
 
-def randkey(length):             # I use my random code to get random key pattern
+def randkey(length):             # custom random sequence generator (not perfect)
     now = datetime.datetime.now()
     list1 = []
     keyy = []
@@ -67,17 +66,9 @@ def user():
     wordy = str(input("\nEnter message to encrypt\n\n"))
     product = vermund(wordy)
     wordd = ''.join(product)
-    print("\n")
-    print(wordd)
-    print("\n")
-    print("*pssst* Don't tell anyone, alright?")
-    print("\n")
-    print(keylist)
+    print("\n",wordd,"\n")
+    print("Key: ")
     return keylist
 
-
 while 25 == 25:
-    print("\n")
-    user_input = int(input("Enter 1 to begin\n"))
-    if user_input == 1:
-        user()
+    print(user())
