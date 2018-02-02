@@ -1,4 +1,5 @@
 # One Time Pad encryption
+# an encrypting technique used to to shift every character of a message according to a one time pad (or just a radnom sequence)
 import datetime
 alphabet = ['i', 'l', 'o', 'v', 'e', 'k', 'a', 'n', 'b', 'r', 'u', 'g', 'm', 'h', 'c', 'p', 'q', 'j', 's', 't', 'f',
             'd', 'z', 'y', 'x', 'w', ' ']
