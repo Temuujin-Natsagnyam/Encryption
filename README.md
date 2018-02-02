@@ -1,4 +1,3 @@
 # Encryption
 Encryption algorithms
-
-Classwork
+Implemented my custom random function into it.
